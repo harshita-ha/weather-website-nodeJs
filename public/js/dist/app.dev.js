@@ -1,6 +1,5 @@
 "use strict";
 
-console.log('Client side js file is loaded!');
 var weatherForm = document.querySelector('form');
 var search = document.querySelector('input');
 var messageOne = document.getElementById('message-1');
