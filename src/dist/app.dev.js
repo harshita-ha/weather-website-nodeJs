@@ -13,7 +13,8 @@ var geocode = require('./utils/geocode.js');
 
 var forecast = require('./utils/forecast.js');
 
-var app = express(); //Setting up path
+var app = express();
+var port = process.env.PORT || 3000; //Setting up path
 
 var viewsPath = path.join(__dirname, '../templates/views');
 var partialsPath = path.join(__dirname, '../templates/partials'); //Setting up Handle-bars
@@ -102,6 +103,6 @@ app.get('*', function (req, res) {
 //app.com//help
 //app.com/about
 
-app.listen(3000, function () {
-  console.log('Server is up on port 3000');
+app.listen(port, function () {
+  console.log('Server is up on port', port);
 });
