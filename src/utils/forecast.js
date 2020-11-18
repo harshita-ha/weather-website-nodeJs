@@ -8,7 +8,7 @@ const forecast = (address, callback) => {
             callback('Unable to find location!', undefined);
         } else {
 
-            callback(undefined, `It is currently ${body.current.temperature} degrees out. There's a ${body.current.precip}% of rain. Weather summary : ${body.current.weather_descriptions}`);
+            callback(undefined, `It is currently ${body.current.temperature} degrees out. There's a ${body.current.precip}% probability of rain. Weather summary : ${body.current.weather_descriptions}`);
         }
     });
 }
